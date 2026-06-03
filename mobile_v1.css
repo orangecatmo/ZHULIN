@@ -114,13 +114,13 @@
     .photo-logo {
         top: 14px !important;
         left: 14px !important;
-        right: 14px;
-        gap: 10px !important;
-    }
+        right: 10px !important;
+        overflow: visible !important;
+}
 
     .left-section .signature-overlay,
     .signature-overlay {
-        width: 180px !important;
+        width: 280px !important;
         max-width: 100%;
     }
 
@@ -905,9 +905,13 @@
     }
 }
 @media (max-width: 900px) {
+  .left-section .photo-logo {
+    overflow: visible !important;
+  }
+
   .left-section .photo-logo img.signature-overlay {
-    width: 280px !important;
-    max-width: 120vw !important;
+    width: min(88vw, 360px) !important;
+    max-width: none !important;
     height: auto !important;
   }
 }
